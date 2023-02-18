@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #282c34 !important;
+  color: white !important;
+}
+
+h1 {
+  margin: .5em !important;
+}
+
+h1,h3 {
+  text-align: center;
+}
+
+form {
+  color: #555;
+  display: flex;
+  gap: .1em;
+  justify-content: center;
+  padding: 2px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+input[type="search"] {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+
+button[type="submit"] {
+  background-color: white !important;
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  cursor: pointer;
+}
+
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+
+.searchbar-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card {
+  background-color: #282c34 !important;
+  color: white !important;
+}
+
+.sub-header {
+  display: flex;
+  padding-right: .5em;
+}
+
+.removeBtn {
+  cursor: not-allowed;
+}
+
+#locations-title {
+  flex: 1;
+}
+
+#location {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  list-style: none;
+}
+
+#location > li {
+  border-bottom: 1px solid white;
+  padding: .5em;
+}
+
+#location > li:hover {
+  cursor: pointer;
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+}
+
+#current-temp, #hi-lo-temp {
+  float: right;
+}
+
+#loc-time {
+  font-size: .8em;
+}
+
+#details-header {
+  width: 100%;
+}
